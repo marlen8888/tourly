@@ -108,6 +108,29 @@
 
     .btn-secondary:is(:hover, :focus) { background: hsla(0, 0%, 100%, 0.1); }
 
+    .h1,
+    .h2,
+    .h3 {
+        font-weight: var(--fw-800); 
+        font-family: var(--ff-montserrat);
+        text-decoration: uppercase;
+    }
+
+    .h1 {
+        color: var(--white);
+        font-size: var(--fs-1);
+    }
+
+    .h2,
+    .h3 { color: var(--gunmetal); }
+
+    .h2 { font-size: var(--fs-2); }
+
+    .h3 {
+        font-size: var(--fs-3);
+        font-weight: var(--fw-700);
+    }
+
     .header {
         position: absolute;
         top: 0;
@@ -277,6 +300,22 @@
         min-height: 600px;
         text-align: center;
         padding-top: 125px;
+    }
+
+    .hero-title { margin-bottom: 20px; }
+
+    .hero-text {
+        color: var(--white);
+        font-size: var(--fs-5);
+        margin-bottom: 40px;
+    }
+
+    .btn-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
 
