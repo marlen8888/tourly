@@ -146,6 +146,11 @@
         margin-bottom: 30px;
     }
 
+    .card-text {
+        color: var(--black-coral);
+        font-size: var(--fs-5);
+    }
+
     .header {
         position: absolute;
         top: 0;
@@ -411,7 +416,32 @@
         transform: translateY(-50%);
         padding: 6px 10px;
         font-size: 14px;
-        
+    }
+
+    .popular-card .card-subtitle {
+        color: var(--blue-ncs);
+        font-size: var(--fs-6);
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+    .popular-card .card-title { margin-bottom: 5px; }
+
+    .popular-card :is(.card-subtitle, .card-title) >a { color: inherit; }
+
+    .popular .btn { margin-inline: auto; }
+
+
+
+    .package { padding-block: var(--section-padding); }
+
+    .package-list { margin-bottom: 40px; }
+
+    .package-list > li:not(:last-child) { margin-bottom: 30px; }
+
+    .package-card {
+        background: var(--cultured);
+        overflow: hidden;
+        border-radius: 15px;
     }
 
 
