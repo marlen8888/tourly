@@ -803,6 +803,21 @@
     <ion-icon name="chevron-up-outline"></ion-icon>
   </a>
 
+  <!-- Phone Popup -->
+<div class="popup-overlay" id="phone-popup">
+  <div class="popup">
+    <span class="popup-close" id="popup-close">&times;</span>
+    <div id="form-content">
+      <p>Введите номер телефона:</p>
+      <input type="tel" id="phone-input" placeholder="+996 (___) ___ ___">
+      <button class="btn btn-primary" id="submit-phone">Отправить</button>
+    </div>
+    <div id="thanks-message" style="display: none;">
+      <p>Мы обязательно свяжемся с вами</p>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -848,6 +863,202 @@
       });
 
     }
+
+    const popup = document.getElementById("phone-popup");
+  const openBtn = document.getElementById("book-now-btn");
+  const closeBtn = document.getElementById("popup-close");
+  const submitBtn = document.getElementById("submit-phone");
+  const formContent = document.getElementById("form-content");
+  const thanksMessage = document.getElementById("thanks-message");
+
+  openBtn.addEventListener("click", () => {
+    popup.style.display = "flex";
+  });
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+    resetPopup();
+  });
+
+  submitBtn.addEventListener("click", () => {
+    const phone = document.getElementById("phone-input").value;
+    if (phone.trim() !== "") {
+      formContent.style.display = "none";
+      thanksMessage.style.display = "block";
+    }
+  });
+
+  function resetPopup() {
+    formContent.style.display = "block";
+    thanksMessage.style.display = "none";
+    document.getElementById("phone-input").value = "";
+  }
+
+  // Закрытие по клику вне окна
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      resetPopup();
+    }
+  });
+
+  const popup1 = document.getElementById("phone-popup");
+  const openBtn1 = document.getElementById("book-btn");
+  const closeBtn1 = document.getElementById("popup-close");
+  const submitBtn1 = document.getElementById("submit-phone");
+  const formContent1 = document.getElementById("form-content");
+  const thanksMessage1 = document.getElementById("thanks-message");
+
+  openBtn1.addEventListener("click", () => {
+    popup1.style.display = "flex";
+  });
+
+  closeBtn1.addEventListener("click", () => {
+    popup1.style.display = "none";
+    resetPopup();
+  });
+
+  submitBtn1.addEventListener("click", () => {
+    const phone = document.getElementById("phone-input").value;
+    if (phone.trim() !== "") {
+      formContent1.style.display = "none";
+      thanksMessage1.style.display = "block";
+    }
+  });
+
+  function resetPopup() {
+    formContent1.style.display = "block";
+    thanksMessage1.style.display = "none";
+    document.getElementById("phone-input").value = "";
+  }
+
+  // Закрытие по клику вне окна
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup1.style.display = "none";
+      resetPopup();
+    }
+  });
+
+  const popup2 = document.getElementById("phone-popup");
+  const openBtn2 = document.getElementById("book--btn");
+  const closeBtn2 = document.getElementById("popup-close");
+  const submitBtn2 = document.getElementById("submit-phone");
+  const formContent2 = document.getElementById("form-content");
+  const thanksMessage2 = document.getElementById("thanks-message");
+
+  openBtn2.addEventListener("click", () => {
+    popup2.style.display = "flex";
+  });
+
+  closeBtn2.addEventListener("click", () => {
+    popup2.style.display = "none";
+    resetPopup();
+  });
+
+  submitBtn2.addEventListener("click", () => {
+    const phone = document.getElementById("phone-input").value;
+    if (phone.trim() !== "") {
+      formContent2.style.display = "none";
+      thanksMessage2.style.display = "block";
+    }
+  });
+
+  function resetPopup() {
+    formContent2.style.display = "block";
+    thanksMessage2.style.display = "none";
+    document.getElementById("phone-input").value = "";
+  }
+
+  // Закрытие по клику вне окна
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      resetPopup();
+    }
+  });
+
+  const popup3 = document.getElementById("phone-popup");
+  const openBtn3 = document.getElementById("book-n-btn");
+  const closeBtn3 = document.getElementById("popup-close");
+  const submitBtn3 = document.getElementById("submit-phone");
+  const formContent3 = document.getElementById("form-content");
+  const thanksMessage3 = document.getElementById("thanks-message");
+
+  openBtn3.addEventListener("click", () => {
+    popup3.style.display = "flex";
+  });
+
+  closeBtn3.addEventListener("click", () => {
+    popup3.style.display = "none";
+    resetPopup();
+  });
+
+  submitBtn3.addEventListener("click", () => {
+    const phone = document.getElementById("phone-input").value;
+    if (phone.trim() !== "") {
+      formContent3.style.display = "none";
+      thanksMessage3.style.display = "block";
+    }
+  });
+
+  function resetPopup() {
+    formContent3.style.display = "block";
+    thanksMessage3.style.display = "none";
+    document.getElementById("phone-input").value = "";
+  }
+
+  // Закрытие по клику вне окна
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      resetPopup();
+    }
+  });
+
+  const popup4 = document.getElementById("phone-popup");
+  const openBtn4 = document.getElementById("book-no-btn");
+  const closeBtn4 = document.getElementById("popup-close");
+  const submitBtn4 = document.getElementById("submit-phone");
+  const formContent4 = document.getElementById("form-content");
+  const thanksMessage4 = document.getElementById("thanks-message");
+
+  openBtn4.addEventListener("click", () => {
+    popup4.style.display = "flex";
+  });
+
+  closeBtn4.addEventListener("click", () => {
+    popup4.style.display = "none";
+    resetPopup();
+  });
+
+  submitBtn4.addEventListener("click", () => {
+    const phone = document.getElementById("phone-input").value;
+    if (phone.trim() !== "") {
+      formContent4.style.display = "none";
+      thanksMessage4.style.display = "block";
+    }
+  });
+
+  function resetPopup() {
+    formContent4.style.display = "block";
+    thanksMessage4.style.display = "none";
+    document.getElementById("phone-input").value = "";
+  }
+
+  // Закрытие по клику вне окна
+  window.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      resetPopup();
+    }
+  });
+
+
+
+  
+
+  
 
   </script>
   
